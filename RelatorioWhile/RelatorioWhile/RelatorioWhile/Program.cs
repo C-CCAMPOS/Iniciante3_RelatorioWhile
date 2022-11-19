@@ -13,7 +13,7 @@ namespace relatorioWhile
             Console.WriteLine(">>>>>INFORME A ORDEM DA LISTA, MAIOR VALOR, MENOR VALOR OU CALCULO DA MÉDIA E MORA<<<<<");
 
             int id = 0;
-            int inter = 0;
+            int qtd = 0;
             double valor = 0;
             double maior = 0;
             double menor = 0;
@@ -32,32 +32,52 @@ namespace relatorioWhile
                 Console.Write("\n\n\nDigite a opção desejada: ");
                 id = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("\nDigite a quantidade de operações que deseja realizar: ");
-                inter = Convert.ToInt32(Console.ReadLine());
-
+                           
                 Console.Write("\n\n\n");
-
-                for (int i = 1; i <= inter; i++)
-                {
-                    Console.Write("Digite o valor da operação " + i + ": ");
-                    valor = Convert.ToDouble(Console.ReadLine());
-
-                    if (id == 1)
-                    {
-                        Console.WriteLine("\n\nMaior Valor: ");
-                        Console.WriteLine("Menor Valor: ");
-                        Console.ReadKey();
-                    }
-                    if (id == 2)
-                    {
-                        Console.WriteLine("\n\nMaior Valor: ");
-                        Console.WriteLine("Menor Valor: ");
-                        Console.ReadKey();
-                    }
-                }
-            }            
-           
             
+                if(id == 1)
+                {
+                    Console.Write("\nDigite a quantidade de operações que deseja realizar: ");
+                    qtd = Convert.ToInt32(Console.ReadLine());
+
+                    Console.Write("Digite o valor da operação " + 1 + ": ");
+                    valor = Convert.ToDouble(Console.ReadLine());
+                    maior = valor;
+                    menor = valor;
+                    id = 1;
+                }
+                    for (int id = 2; i <= qtd; id++)
+                    {
+                        Console.Write("Digite o valor da operação " + id + ": ");
+                        valor = Convert.ToDouble(Console.ReadLine());
+                    
+                       
+                        if(valor < menor)
+                        { 
+                            menor = valor;
+                            
+                        }
+                        if (valor > maior)
+                        {
+                            maior = valor;
+                            
+                        }                       
+                    }
+                     Console.WriteLine("\n\nMaior Valor: " + maior);
+                     Console.WriteLine("Menor Valor: " + menor);                        
+                     Console.ReadKey();
+                      
+                    
+                    
+                
+                
+                
+
+                    
+                    
+                       
+           
+           } 
         }
     }
 }
