@@ -22,7 +22,6 @@ namespace relatorioWhile
             double media = 0;
             double mora = 0;
 
-
             while (id < 5)
             {
                 Console.WriteLine("\n\n-----------------xxxxxxxxxxxxxxx------------------");
@@ -43,11 +42,8 @@ namespace relatorioWhile
                 Console.Write("\nDigite o valor da operação " + 1 + ": ");
                 valor = Convert.ToDouble(Console.ReadLine());
                 maior = valor;
-                menor = valor;
-               
-                i = 1;
-
-                
+                menor = valor;               
+                i = 1;                
 
                 for (i = 2; i <= qtd; i++)
                 {
@@ -57,8 +53,6 @@ namespace relatorioWhile
                
                 if (id == 1)
                 {
-
-
                     if (valor < menor)
                     {
                         menor = valor;
@@ -68,6 +62,7 @@ namespace relatorioWhile
                     {
                         maior = valor;
                     }
+
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
                     Console.WriteLine("maior valor |" + maior + "|");
                     Console.WriteLine("menor valor |" + menor + "|");
@@ -88,14 +83,12 @@ namespace relatorioWhile
                     {
                         qtd++;
                     }
+
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
                     Console.WriteLine("ORDEM CRESCENTE |" + crescente + "|");
                     Console.WriteLine("ORDEM DECRESCENTE |" + decrescente + "|");
                     Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
                     Console.Write("\n\n");
-
-
-
 
                 }
             }
