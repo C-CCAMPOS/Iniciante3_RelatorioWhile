@@ -15,8 +15,7 @@ namespace relatorioWhile
             int qtd = 0;
             int i = 0;
             double crescente = 0;
-            double decrescente = 0;
-            double valor = 0;
+            double decrescente = 0;            
             double maior = 0;
             double menor = 0;
             double media = 0;
@@ -38,29 +37,30 @@ namespace relatorioWhile
                 
                 if (id == 1)
                 {
+                    double valor1 = 0;
                     Console.Write("Informe a quantidade de operações que deseja realizar: ");
                     qtd = Convert.ToInt32(Console.ReadLine());
 
                     Console.Write("\nDigite o valor da operação " + 1 + ": ");
-                    valor = Convert.ToDouble(Console.ReadLine());
-                    maior = valor;
-                    menor = valor;                    
+                    valor1 = Convert.ToDouble(Console.ReadLine());
+                    maior = valor1;
+                    menor = valor1;                    
 
                     for (i = 2; i <= qtd; i++)
 
                     {
                         Console.Write("Digite o valor da operação " + i + ": ");
-                        valor = Convert.ToDouble(Console.ReadLine());
+                        valor1 = Convert.ToDouble(Console.ReadLine());
                     }                      
 
-                    if (valor < menor)
+                    if (valor1 < menor)
                     {
-                        menor = valor;
+                        menor = valor1;
                     }
 
-                    if (valor > maior)
+                    if (valor1 > maior)
                     {
-                        maior = valor;
+                        maior = valor1;
                     }
 
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
@@ -74,6 +74,20 @@ namespace relatorioWhile
 
                 if (id == 2)
                 {
+                    double valor2 = 0;
+                    Console.Write("Informe a quantidade de operações que deseja realizar: ");
+                    qtd = Convert.ToInt32(Console.ReadLine());
+
+                    Console.Write("\nDigite o valor da operação " + 1 + ": ");
+                    valor2 = Convert.ToDouble(Console.ReadLine());
+                    
+                    for (i = 2; i <= qtd; i++)
+
+                    {
+                        Console.Write("Digite o valor da operação " + i + ": ");
+                        valor2 = Convert.ToDouble(Console.ReadLine());
+                    }
+
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
                     Console.WriteLine("ORDEM CRESCENTE |" + crescente + "|");
                     Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
@@ -84,6 +98,20 @@ namespace relatorioWhile
 
                 if (id == 3)
                 {
+                    double valor3 = 0;
+                    Console.Write("Informe a quantidade de operações que deseja realizar: ");
+                    qtd = Convert.ToInt32(Console.ReadLine());
+
+                    Console.Write("\nDigite o valor da operação " + 1 + ": ");
+                    valor3 = Convert.ToDouble(Console.ReadLine());
+
+                    for (i = 2; i <= qtd; i++)
+
+                    {
+                        Console.Write("Digite o valor da operação " + i + ": ");
+                        valor3 = Convert.ToDouble(Console.ReadLine());
+                    }                    
+
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
                     Console.WriteLine("ORDEM DECRESCENTE |" + decrescente + "|");
                     Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
@@ -94,6 +122,20 @@ namespace relatorioWhile
 
                 if (id == 4)
                 {
+                    double valor4 = 0;
+                    Console.Write("Informe a quantidade de operações que deseja realizar: ");
+                    qtd = Convert.ToInt32(Console.ReadLine());
+
+                    Console.Write("\nDigite o valor da operação " + 1 + ": ");
+                    valor4 = Convert.ToDouble(Console.ReadLine());
+
+                    for (i = 2; i <= qtd; i++)
+
+                    {
+                        Console.Write("Digite o valor da operação " + i + ": ");
+                        valor4 = Convert.ToDouble(Console.ReadLine());
+                    }                    
+
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
                     Console.WriteLine("ORDEM CRESCENTE |" + crescente + "|");
                     Console.WriteLine("ORDEM DECRESCENTE |" + decrescente + "|");
@@ -101,8 +143,7 @@ namespace relatorioWhile
                     Console.Write("\n\n");
                     Console.ReadKey();
                     Console.Clear();                    
-                }
-                
+                }                
 
                 if (id == 5)
                 {
