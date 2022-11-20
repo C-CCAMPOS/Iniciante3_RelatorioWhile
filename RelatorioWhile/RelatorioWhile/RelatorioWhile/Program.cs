@@ -1,8 +1,5 @@
 ﻿using System;
 
-
-
-
 namespace relatorioWhile
 {
     internal class Program
@@ -11,22 +8,24 @@ namespace relatorioWhile
         {
             Console.WriteLine("\n\n\n- PROGRAMA PARA INFORMAR OS VALORES DE UMA LISTA");
             Console.WriteLine("- CLASSIFICAR POR ORDEM CRESCENTE E DECRESCENTE");
-            Console.WriteLine("- INFORMAR O MAIOR E MENOR VALOR");
+            Console.WriteLine("- INFORMAR O MAIOR E MENOR VALOR ");
             Console.WriteLine("- CALCULAR A MÉDIA E MORA");
 
             int id = 0;
             int qtd = 0;
             int i = 0;
+            double crescente = 0;
+            double decrescente = 0;
             double valor = 0;
             double maior = 0;
-            double menor = 0;
+            double menor = 0;           
             double media = 0;
             double mora = 0;
 
 
             while (id < 5)
             {
-                Console.WriteLine("\n\n-----------------xxxxxxxxxxxxxxx------------------");               
+                Console.WriteLine("\n\n-----------------xxxxxxxxxxxxxxx------------------");
                 Console.WriteLine("|1| Maior e Menor valor da lista.");
                 Console.WriteLine("|2| Ordenar a lista de forma crescente.");
                 Console.WriteLine("|3| Ordenar a lista de forma decrescente.");
@@ -40,21 +39,22 @@ namespace relatorioWhile
 
                 Console.Write("\nInforme a quantidade de operações que deseja realizar: ");
                 qtd = Convert.ToInt32(Console.ReadLine());
-                                 
+
                 Console.Write("\nDigite o valor da operação " + 1 + ": ");
                 valor = Convert.ToDouble(Console.ReadLine());
                 maior = valor;
                 menor = valor;
+               
                 i = 1;
+
+                
 
                 for (i = 2; i <= qtd; i++)
                 {
                     Console.Write("Digite o valor da operação " + i + ": ");
                     valor = Convert.ToDouble(Console.ReadLine());
                 }
-
-                            
-                                                
+               
                 if (id == 1)
                 {
 
@@ -68,17 +68,36 @@ namespace relatorioWhile
                     {
                         maior = valor;
                     }
+                    Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
+                    Console.WriteLine("maior valor |" + maior + "|");
+                    Console.WriteLine("menor valor |" + menor + "|");
+                    Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
+                    Console.Write("\n\n");
+                    Console.ReadKey();
+                    Console.Clear();
                 }
 
-                Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
-                Console.WriteLine("MAIOR VALOR |" + maior + "|");
-                Console.WriteLine("MENOR VALOR |" + menor + "|");
-                Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
-                Console.Write("\n\n");                
-                Console.ReadKey();
-                Console.Clear();
+                if (id == 2)
+                {
+
+                    if (valor > crescente)
+                    {
+                        qtd++;
+                    }
+                    if (valor < decrescente)
+                    {
+                        qtd++;
+                    }
+                    Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
+                    Console.WriteLine("ORDEM CRESCENTE |" + crescente + "|");
+                    Console.WriteLine("ORDEM DECRESCENTE |" + decrescente + "|");
+                    Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
+                    Console.Write("\n\n");
 
 
+
+
+                }
             }
         }
     }
