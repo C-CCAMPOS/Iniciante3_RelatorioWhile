@@ -22,7 +22,7 @@ namespace relatorioWhile
             double media = 0;
             double mora = 0;
 
-            while (id < 5)
+            while (id <= 5)
             {
                 Console.WriteLine("\n\n-----------------xxxxxxxxxxxxxxx------------------");
                 Console.WriteLine("|1| Maior e Menor valor da lista.");
@@ -35,30 +35,24 @@ namespace relatorioWhile
                 Console.Write("\nDigite a opção desejada: ");
                 id = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("**************************************************");
-
-                Console.Write("\nInforme a quantidade de operações que deseja realizar: ");
-                qtd = Convert.ToInt32(Console.ReadLine());
-
-                Console.Write("\nDigite o valor da operação " + 1 + ": ");
-                valor = Convert.ToDouble(Console.ReadLine());
-                maior = valor;
-                menor = valor;
-
-
-
-                i = 1;
-
-
-                for (i = 2; i <= qtd; i++)
-
-                {
-                    Console.Write("Digite o valor da operação " + i + ": ");
-                    valor = Convert.ToDouble(Console.ReadLine());
-                }
-
-
+                
                 if (id == 1)
                 {
+                    Console.Write("Informe a quantidade de operações que deseja realizar: ");
+                    qtd = Convert.ToInt32(Console.ReadLine());
+
+                    Console.Write("\nDigite o valor da operação " + 1 + ": ");
+                    valor = Convert.ToDouble(Console.ReadLine());
+                    maior = valor;
+                    menor = valor;                    
+
+                    for (i = 2; i <= qtd; i++)
+
+                    {
+                        Console.Write("Digite o valor da operação " + i + ": ");
+                        valor = Convert.ToDouble(Console.ReadLine());
+                    }                      
+
                     if (valor < menor)
                     {
                         menor = valor;
@@ -78,8 +72,6 @@ namespace relatorioWhile
                     Console.Clear();
                 }
 
-
-
                 if (id == 2)
                 {
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
@@ -88,7 +80,6 @@ namespace relatorioWhile
                     Console.Write("\n\n");
                     Console.ReadKey();
                     Console.Clear();
-
                 }
 
                 if (id == 3)
@@ -99,7 +90,6 @@ namespace relatorioWhile
                     Console.Write("\n\n");
                     Console.ReadKey();
                     Console.Clear();
-
                 }
 
                 if (id == 4)
@@ -110,16 +100,20 @@ namespace relatorioWhile
                     Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
                     Console.Write("\n\n");
                     Console.ReadKey();
-                    Console.Clear();
+                    Console.Clear();                    
                 }
+                
+
                 if (id == 5)
                 {
+                    Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");                    
+                    Console.WriteLine("              APLICAÇÃO FINALIZADA");
+                    Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
+                    Console.Write("\n\n");
+                    Console.ReadKey();
                     break;
-                }
+                }                
             }
-            
-
-            
         }
     }
 }
