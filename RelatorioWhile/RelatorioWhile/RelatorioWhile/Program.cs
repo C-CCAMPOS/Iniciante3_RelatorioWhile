@@ -18,7 +18,7 @@ namespace relatorioWhile
             double decrescente = 0;
             double valor = 0;
             double maior = 0;
-            double menor = 0;           
+            double menor = 0;
             double media = 0;
             double mora = 0;
 
@@ -42,18 +42,21 @@ namespace relatorioWhile
                 Console.Write("\nDigite o valor da operação " + 1 + ": ");
                 valor = Convert.ToDouble(Console.ReadLine());
                 maior = valor;
-                menor = valor;          
-                i = 1;                
+                menor = valor;
 
-                
-               for (i = 2; i <= qtd; i++)
 
-                { 
+
+                i = 1;
+
+
+                for (i = 2; i <= qtd; i++)
+
+                {
                     Console.Write("Digite o valor da operação " + i + ": ");
                     valor = Convert.ToDouble(Console.ReadLine());
-               }
-                
-               
+                }
+
+
                 if (id == 1)
                 {
                     if (valor < menor)
@@ -75,11 +78,22 @@ namespace relatorioWhile
                     Console.Clear();
                 }
 
-                if (id == 2)
-                {                                                       
 
+
+                if (id == 2)
+                {
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
                     Console.WriteLine("ORDEM CRESCENTE |" + crescente + "|");
+                    Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
+                    Console.Write("\n\n");
+                    Console.ReadKey();
+                    Console.Clear();
+
+                }
+
+                if (id == 3)
+                {
+                    Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
                     Console.WriteLine("ORDEM DECRESCENTE |" + decrescente + "|");
                     Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
                     Console.Write("\n\n");
@@ -87,8 +101,25 @@ namespace relatorioWhile
                     Console.Clear();
 
                 }
+
+                if (id == 4)
+                {
+                    Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
+                    Console.WriteLine("ORDEM CRESCENTE |" + crescente + "|");
+                    Console.WriteLine("ORDEM DECRESCENTE |" + decrescente + "|");
+                    Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
+                    Console.Write("\n\n");
+                    Console.ReadKey();
+                    Console.Clear();
+                }
+                if (id == 5)
+                {
+                    break;
+                }
             }
+            
+
+            
         }
     }
 }
-
