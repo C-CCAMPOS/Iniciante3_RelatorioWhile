@@ -12,8 +12,7 @@ namespace relatorioWhile
             Console.WriteLine("- CALCULAR A MÉDIA E MORA");
 
             int id = 0;
-            int qtd = 0;
-            int i = 0;
+            int qtd = 0;            
             double crescente = 0;
             double decrescente = 0;            
             double maior = 0;
@@ -46,7 +45,7 @@ namespace relatorioWhile
                     maior = valor1;
                     menor = valor1;                    
 
-                    for (i = 2; i <= qtd; i++)
+                    for (int i = 2; i <= qtd; i++)
 
                     {
                         Console.Write("Digite o valor da operação " + i + ": ");
@@ -81,10 +80,10 @@ namespace relatorioWhile
                     Console.Write("\nDigite o valor da operação " + 1 + ": ");
                     valor2 = Convert.ToDouble(Console.ReadLine());
                     
-                    for (i = 2; i <= qtd; i++)
+                    for (int j = 2; j <= qtd; j++)
 
                     {
-                        Console.Write("Digite o valor da operação " + i + ": ");
+                        Console.Write("Digite o valor da operação " + j + ": ");
                         valor2 = Convert.ToDouble(Console.ReadLine());
                     }
 
@@ -105,10 +104,10 @@ namespace relatorioWhile
                     Console.Write("\nDigite o valor da operação " + 1 + ": ");
                     valor3 = Convert.ToDouble(Console.ReadLine());
 
-                    for (i = 2; i <= qtd; i++)
+                    for (int k = 2; k <= qtd; k++)
 
                     {
-                        Console.Write("Digite o valor da operação " + i + ": ");
+                        Console.Write("Digite o valor da operação " + k + ": ");
                         valor3 = Convert.ToDouble(Console.ReadLine());
                     }                    
 
@@ -129,10 +128,10 @@ namespace relatorioWhile
                     Console.Write("\nDigite o valor da operação " + 1 + ": ");
                     valor4 = Convert.ToDouble(Console.ReadLine());
 
-                    for (i = 2; i <= qtd; i++)
+                    for (int l = 2; l <= qtd; l++)
 
                     {
-                        Console.Write("Digite o valor da operação " + i + ": ");
+                        Console.Write("Digite o valor da operação " + l + ": ");
                         valor4 = Convert.ToDouble(Console.ReadLine());
                     }                    
 
@@ -148,7 +147,7 @@ namespace relatorioWhile
                 if (id == 5)
                 {
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");                    
-                    Console.WriteLine("              APLICAÇÃO FINALIZADA");
+                    Console.WriteLine("           APLICAÇÃO FINALIZADA COM SUCESSO!");
                     Console.WriteLine("-----------------xxxxxxxxxxxxxxx------------------");
                     Console.Write("\n\n");
                     Console.ReadKey();
