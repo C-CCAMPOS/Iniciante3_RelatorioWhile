@@ -72,20 +72,19 @@ namespace relatorioWhile
                 }
 
                 if (id == 2)
-                {
-                    double valor2 = 0;
+                {                    
                     Console.Write("Informe a quantidade de operações que deseja realizar: ");
                     qtd = Convert.ToInt32(Console.ReadLine());
 
-                    Console.Write("\nDigite o valor da operação " + 1 + ": ");
-                    valor2 = Convert.ToDouble(Console.ReadLine());
-                    
-                    for (int j = 2; j <= qtd; j++)
+                    double[] valor2 = new double[qtd];
 
+                    for (int j = 1; j <= qtd; j++)
                     {
                         Console.Write("Digite o valor da operação " + j + ": ");
-                        valor2 = Convert.ToDouble(Console.ReadLine());
+                        valor2[j] = Convert.ToDouble(Console.ReadLine());                        
                     }
+
+                    
 
                     Console.WriteLine("\n-----------------xxxxxxxxxxxxxxx------------------");
                     Console.WriteLine("ORDEM CRESCENTE |" + crescente + "|");
